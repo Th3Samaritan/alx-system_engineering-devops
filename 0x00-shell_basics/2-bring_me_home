@@ -1,0 +1,4 @@
+#!/bin/bash
+Home=$(echo ~)
+cd "$Home"
+echo "$(pwd)"

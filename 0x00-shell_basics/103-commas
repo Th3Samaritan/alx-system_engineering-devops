@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -ap1 --group-directories-first | sort -V | tr '\n' ',' && echo
+

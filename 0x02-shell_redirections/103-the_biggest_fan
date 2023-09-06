@@ -1,0 +1,11 @@
+#!/bin/bash
+awk '
+{
+    requests[$1]++
+}
+END {
+    for (host in requests) {
+        print host, requests[host]
+    }
+}
+' | sort -rnk2 | head -n 11
